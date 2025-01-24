@@ -35,9 +35,10 @@ This is an Event Management System built with PHP. It allows users to register, 
     capacity INT,                                 -- Capacity for attendees
     description LONGTEXT,                         -- Detailed description of the event
     create_at VARCHAR(255)                        -- Creation timestamp
-);
-   ```
+    );
+    ```
 7.register table
+
 ```sh
 CREATE TABLE register (
     id INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-incrementing unique ID
