@@ -18,11 +18,42 @@ This is an Event Management System built with PHP. It allows users to register, 
     ```sh
     composer install
     ```
+3. Install Xampp softwere
 
-3. Set up your database and update the database connection settings in [Database.php](http://_vscodecontentref_/32) and [Database1.php](http://_vscodecontentref_/33).
+4. Set up your database and update the database connection settings in xampp mysql.
+   
+5. Create one database name events and two tables name allevents and register.
+   
+6. allEvents table
+   ```sh
+   CREATE TABLE allevents (
+    id INT AUTO_INCREMENT PRIMARY KEY,            -- Unique ID for the event
+    UniqueId VARCHAR(255),                        -- Unique identifier for the event
+    name VARCHAR(255),                            -- Name of the event
+    address LONGTEXT,                             -- Address of the event
+    time VARCHAR(255),                            -- Time of the event
+    capacity INT,                                 -- Capacity for attendees
+    description LONGTEXT,                         -- Detailed description of the event
+    create_at VARCHAR(255)                        -- Creation timestamp
+);
+   ```
+7.register table
+```sh
+CREATE TABLE register (
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-incrementing unique ID
+    UniqueId VARCHAR(255),              -- Unique identifier for the user
+    Name VARCHAR(255),                  -- User's name
+    Email VARCHAR(255),                 -- User's email address
+    Password VARCHAR(255)               -- User's password
+);
+```
 
-4. Start your local server and navigate to the project directory.
-
+8. Start your local server and mysql.
+9. GO to the git clone files using cmd cd <Files Path>
+10. Using cmd,Go to the public folder with cd <File name>
+11. ```sh php -S localhost:8080 ```
+12. First register the form
+13. Login the page
 ## Usage
 
 - **Register**: Go to `/register` to create a new account.
