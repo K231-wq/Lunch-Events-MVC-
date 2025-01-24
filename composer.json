@@ -1,0 +1,14 @@
+{
+    "name": "pc/advance",
+    "authors": [
+        {
+            "name": "Kris Jackson"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\" : "./"
+        }
+    }
+}
