@@ -79,10 +79,6 @@ CREATE TABLE register (
 - **Router.php**: Handles routing of requests to appropriate controllers and actions.
 - **View/**: Contains view files for rendering HTML pages.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Authors
 
 - Kris Jackson
